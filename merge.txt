@@ -1,0 +1,10 @@
+# BPE merges (contoh mini)
+t h
+th e
+a n
+i n
+i n f
+i n fo
+f o r
+g i t
+t o n
