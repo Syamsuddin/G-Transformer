@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "truncation": {
+    "max_length": 65536,
+    "strategy": "longest_first",
+    "direction": "right"
+  },
+  "padding": {
+    "strategy": "right",
+    "pad_id": 0,
+    "pad_token": "<pad>"
+  },
+  "added_tokens": [
+    {"id": 0, "content": "<pad>", "single_word": false, "special": true},
+    {"id": 1, "content": "<bos>", "single_word": false, "special": true},
+    {"id": 2, "content": "<eos>", "single_word": false, "special": true}
+  ],
+  "normalizer": {
+    "type": "NFKC"
+  },
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": {
+    "type": "TemplateProcessing",
+    "single": "<bos> $A <eos>",
+    "pair": "<bos> $A <eos> $B <eos>",
+    "special_tokens": {
+      "<bos>": 1,
+      "<eos>": 2
+    }
+  },
+  "decoder": {
+    "type": "WordPiece",
+    "prefix": "##"
+  },
+  "model": {
+    "type": "BPE",
+    "vocab": {
+      "<pad>": 0,
+      "<bos>": 1,
+      "<eos>": 2,
+      "the": 3,
+      "of": 4,
+      "to": 5,
+      "and": 6,
+      "I": 7,
+      "you": 8
+    },
+    "merges": [
+      "t h",
+      "th e",
+      "a n",
+      "a nd",
+      "i n",
+      "i ng"
+    ]
+  }
+}
