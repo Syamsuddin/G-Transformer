@@ -1,4 +1,4 @@
-# 🧠 G-Transformer
+# G-Transformer
 
 ### *Energy-Efficient Transformer Architecture Based on Genesis Information Theory (GIT)*
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 🌍 Overview
+## Overview
 
 **G-Transformer** adalah rancangan **Large Language Model (LLM)** hemat energi berdasarkan **Genesis Information Theory (GIT)**.
 Model ini memperlakukan setiap operasi komputasi sebagai **transfer energi-informasi (E–I)** dengan hukum kesetaraan:
@@ -24,7 +24,7 @@ Prinsip ini melahirkan pendekatan baru untuk *attention*, *feed-forward*, dan *c
 
 ---
 
-## 🔬 Key Innovations
+## Key Innovations
 
 | No | Komponen                     | Inovasi                                                  | Dampak                           |
 | -- | ---------------------------- | -------------------------------------------------------- | -------------------------------- |
@@ -38,7 +38,7 @@ Prinsip ini melahirkan pendekatan baru untuk *attention*, *feed-forward*, dan *c
 
 ---
 
-## ⚙️ Core Equations
+## Core Equations
 
 **1. Total Energy Equation**
 [
@@ -57,30 +57,30 @@ L_{\text{total}} = L_{\text{crossentropy}} + λ \cdot (I_{\text{total}} - I_{\te
 
 ---
 
-## 🧩 Architecture
+## Architecture
 
-### 🔸 G-Transformer Core Diagram
+### G-Transformer Core Diagram
 
 ```
- ┌──────────────────────────────────────────┐
+ ┌───────────────────────────────────────────┐
  │              G-Transformer Core           │
  │ ┌──────────────┐   ┌──────────────┐       │
  │ │ IA-Attention │ → │ LR-FFN       │ → ... │
- │ └──────┬───────┘   └────┬────────┘       │
+ │ └──────┬───────┘   └────┬────────┘        │
  │        │ ΔI Filter       │ Low-Rank       │
  │        ▼                 ▼                │
  │ ┌────────────┐   ┌──────────────┐         │
  │ │ KV-Cache   │ ← │ MoE Router   │         │
- │ └────┬───────┘   └────┬────────┘         │
- │      │                │ Entropy Control  │
- │      ▼                ▼                  │
+ │ └────┬───────┘   └────┬────────┘          │
+ │      │                │ Entropy Control   │
+ │      ▼                ▼                   │
  │   ΔGrad Comm ← DVFS Controller ← Scheduler│
- └──────────────────────────────────────────┘
+ └───────────────────────────────────────────┘
 ```
 
 ---
 
-## 🔋 Energy Model
+## Energy Model
 
 | Komponen          | Energi per Operasi | Reduksi |
 | ----------------- | ------------------ | ------- |
@@ -92,7 +92,7 @@ L_{\text{total}} = L_{\text{crossentropy}} + λ \cdot (I_{\text{total}} - I_{\te
 
 ---
 
-## 🧠 Training Configuration
+## Training Configuration
 
 ```python
 model = GTransformer(
@@ -126,7 +126,7 @@ model = GTransformer(
 
 ---
 
-## 🧮 Mathematical Insights
+## Mathematical Insights
 
 **Informational Attention**
 [
@@ -145,7 +145,7 @@ P = k_I , T , \frac{dI}{dt}
 
 ---
 
-## 🔧 Hardware Reference
+## Hardware Reference
 
 | Component    | Recommended Spec                               |
 | ------------ | ---------------------------------------------- |
@@ -157,9 +157,9 @@ P = k_I , T , \frac{dI}{dt}
 
 ---
 
-## 🧪 Verification
+## Verification
 
-### ✅ Empirical Tests
+### Empirical Tests
 
 | Test               | Goal               | Result            |
 | ------------------ | ------------------ | ----------------- |
@@ -170,7 +170,7 @@ P = k_I , T , \frac{dI}{dt}
 
 ---
 
-## 🚀 Roadmap
+## Roadmap
 
 * [x] Define Informational Attention (ΔI-based)
 * [x] Implement Low-Rank FFN
@@ -181,7 +181,7 @@ P = k_I , T , \frac{dI}{dt}
 
 ---
 
-## 📘 Documentation
+## Documentation
 
 * [`SRS.md`](./SRS.md) – Spesifikasi Teknis Lengkap
 * [`ARCHITECTURE.md`](./ARCHITECTURE.md) – Desain sistem dan diagram aliran informasi
@@ -191,7 +191,7 @@ P = k_I , T , \frac{dI}{dt}
 
 ---
 
-## 👥 Author
+## Author
 
 **Syamsuddin B. Ideris, S.Pd.MM**
 Mathematics Educator & Independent Researcher
@@ -199,14 +199,14 @@ Email: [syamsuddin.ideris@gmail.com](mailto:syamsuddin.ideris@gmail.com)
 
 ---
 
-## 🧩 License
+## License
 
 This project is licensed under **GPL 3**.
 Free for research, education, and non-commercial use.
 
 ---
 
-## 🧭 Citation
+## Citation
 
 If you use G-Transformer in research, please cite:
 
