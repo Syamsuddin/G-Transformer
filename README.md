@@ -201,7 +201,7 @@ Email: [syamsuddin.ideris@gmail.com](mailto:syamsuddin.ideris@gmail.com)
 
 ## 🧩 License
 
-This project is licensed under **Creative Commons BY-NC 4.0**.
+This project is licensed under **GPL 3**.
 Free for research, education, and non-commercial use.
 
 ---
