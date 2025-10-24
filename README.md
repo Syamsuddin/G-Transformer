@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/banner_gtransformer.png" alt="G-Transformer Banner" width="85%">
+</p>
 # G-Transformer
 
 ### *Energy-Efficient Transformer Architecture Based on Genesis Information Theory (GIT)*
