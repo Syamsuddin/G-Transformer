@@ -1,0 +1,22 @@
+{
+  "<pad>": 0,
+  "<s>": 1,
+  "</s>": 2,
+  "<unk>": 3,
+  "the": 4,
+  "of": 5,
+  "and": 6,
+  "to": 7,
+  "a": 8,
+  "in": 9,
+  "is": 10,
+  "information": 11,
+  "energy": 12,
+  "field": 13,
+  "mass": 14,
+  "data": 15,
+  "quantum": 16,
+  "gravity": 17,
+  "gitton": 18,
+  "transformer": 19
+}
